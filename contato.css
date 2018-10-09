@@ -10,10 +10,11 @@ html, body {
 	height:100%;
 }
 body {
-	background: #fff;
+/*	background: #262626;*/
 	color: #485e74;
-	/*line-height: 1.6;*/
+	line-height: 1.5;
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, san-serif;
+	overflow: hidden;
 }
 .grid-container {
 	height:100%;
@@ -39,31 +40,28 @@ header {
 	flex-direction: row;
 	top: 0;
 	left: 0;
-	padding: 0 80px;
+	padding-left: 30px;
+	padding-right: 50px;
 	background: #262626;
 	width: 100vw;
 	justify-content: space-between;
 	align-items: center;
+	z-index: +9999;
 }
-header img { width: 40px; margin: 0;padding:0;}
+header img { width: 40px; margin:0;padding:0;}
 #rodape {
 	position: relative;
 	padding-top:10px;
 	padding-bottom:10px;
 	text-align: center;
-
 }
-header nav ul {
-	display: flex;
-}
-header nav ul li { 
-	list-style: none;
-}
+header nav ul { display: flex;}
+header nav ul li { list-style: none;}
 header nav ul li a { 
 	text-decoration: none;
 	display: block;
-	height: 50px;
-	line-height: 50px;
+	height: 53px;
+	line-height: 53px;
 	color: #fff;
 	background-color: #262626;
 	padding: 0 20px;
@@ -82,15 +80,6 @@ header nav ul li a:hover, header nav ul li a.active {
 	cursor: pointer;
 	display: none;
 }
-/*.button{
-	background: grey;
-	color: #fff;
-	font-size: 16px;
-	border-radius:30px;
-	padding:15px 35px;
-	opacity: 0.7;
-	margin:10px;
-}*/
 .container {
 	width:100%;
 }
@@ -100,21 +89,23 @@ ul {
 }
 .brand {
 	text-align: center;
-	background: #c9e6ff;
-	padding:10px;
-	/*position:relative;*/
+	background: #262626;
+	padding:0;
+	text-indent: 20px;
+	color:#fff;
 }
 .brand span {
 	color: #fff;
 }
 .wrapper {
-	box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+	/*box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);*/
 }
 .wrapper > * {
 	padding:1em;
 }
 .company-info {
-	background: #c9e6ff;
+	background: #1387C5;
+	color:#fff;
 }
 .company-info h3, .company-info ul, {
 	text-align: center;
@@ -122,10 +113,6 @@ ul {
 }
 .contact {
 	background: #f9feff;
-}
-.contact h3 {
-	/*padding-bottom: 1em;*/
-	/*font-size: 20pt;*/
 }
 /*form styles*/
 .contact form {
@@ -146,12 +133,13 @@ ul {
 .contact form button, .contact form input, .contact form textarea {
 	width: 100%;
 	padding:1em;
-	border: 1px solid #c9e6ff;
+	border: 1px solid #1387C5;
 }
 .contact form button {
-	background: #c9e6ff;
+	background: #1387C5;
 	border:0;
 	text-transform: uppercase;
+	color:#fff;
 }
 .contact form button:hover, .contact form button:focus {
 	background: #92bde7;
@@ -196,7 +184,7 @@ ul {
 	}
 	header nav.active {
 		left: 0;
-		z-index: 999;
+		z-index: +99;
 	}
 	header nav ul {
 		display: block;
