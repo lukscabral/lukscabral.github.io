@@ -13,7 +13,7 @@ body {
 	color: #485e74;
 	line-height: 1.5;
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, san-serif;
-	overflow: hidden;
+	overflow: scroll;
 }
 .grid-container {
 	height:100vh;
