@@ -112,16 +112,16 @@ ul li a:hover, .active{
     height: calc(100% + 5px);
     border-left: 2px solid rgb(66, 245, 87);
     right:-10px;
-    animation: cursor .8s infinite, digita 20s steps(15) infinite;
-    width: 102%;
+    animation: cursor 1s infinite, digita 20s steps(13) infinite;
+    width: 100%;
     background-color: rgb(20, 15, 15);
 }
 @keyframes digita {
     10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
         width: 0;
     }
-    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
-        width: 102%;
+    0%, 5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: 108%;
     }
 }
 @keyframes cursor {
@@ -131,18 +131,18 @@ ul li a:hover, .active{
 }
 @keyframes palavras {
     0%,20%{
-        content: "Olá, Meu nome é Lucas";
+        content: "Dev Front-End";
     }
     21%,40%{
-        content:"Estudo Eng. de Sofware";
+        content:"Estudante de:";
     }
     41%,60%{     
-        content:"Tenho conhecimentos em:";
+        content:"CSS, HTML e JS";
     }
     61%,80%{
-        content:"Html, Css e Javascript";
+        content:"Vue.js";
     }
     81%,100%{
-        content:"Amo o Front-End!";
+        content:"Amo Front-End!";
     }
 }
