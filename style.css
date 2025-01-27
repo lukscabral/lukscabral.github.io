@@ -13,6 +13,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 body{
     min-height: 100vh;
@@ -20,6 +21,7 @@ body{
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+    
 }
 body a{
     text-decoration: none;
@@ -40,7 +42,15 @@ nav{
     font-size: 1.3em;
     align-items: center;
 }
-
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav ul li {
+    padding: 1em;
+    list-style: none;
+}
 main{
     width: 50vw;
     font-family: "Dosis", serif;
@@ -64,6 +74,7 @@ article {
 }
 article img{
     width: 100%;
+    
 }
 article a {
     color:black;
@@ -76,5 +87,10 @@ article a {
 }
 #contato_icones {
     padding:1em 0;
-
+}
+.card p{
+    padding: 1em 0;
+}
+.card img {
+    border: 1px solid black;
 }
