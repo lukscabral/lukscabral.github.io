@@ -51,6 +51,9 @@ nav ul li {
     padding: 1em;
     list-style: none;
 }
+nav ul li a:hover {
+    color:rgb(166, 208, 245);
+}
 main{
     width: 50vw;
     font-family: "Dosis", serif;
